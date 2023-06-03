@@ -2,6 +2,8 @@ package entities;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -13,6 +15,8 @@ import lombok.Data;
 @Data
 public class Utente {
 	@Id
+	@Autowired
+
 	private String username;
 	private String nomeCompleto;
 	private String email;

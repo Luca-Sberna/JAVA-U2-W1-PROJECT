@@ -2,6 +2,8 @@ package entities;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -15,6 +17,8 @@ import utils.TipoPostazione;
 @Data
 public class Postazione {
 	@Id
+	@Autowired
+
 	private String codice;
 	private String descrizione;
 	private TipoPostazione tipo;
